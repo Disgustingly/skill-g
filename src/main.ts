@@ -19,11 +19,6 @@ async function bootstrap() {
     credentials: true,
   });
 
-  // Serve static files from uploads directory
-  app.useStaticAssets(join(__dirname, '..', 'uploads'), {
-    prefix: '/uploads/',
-  });
-
   // Swagger configuration
   const config = new DocumentBuilder()
     .setTitle('School Management API')
